@@ -6,9 +6,46 @@
     <body>
         <header>    </header>
 
-        <nav>   </nav>
+        <nav> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="img_gallery.html">Gallery</a></li>
+                <li><a href="current_members.html">Current Members</a></li>
+                <li><a href="event_calendars.html">Events</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
 
-        <main>  </main>
+        <main>  
+            <div>
+                <form>
+                    <fieldset>
+                        <legend>Contact us using the form below</legend>
+
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" value=""/> <br/>
+
+                        <label for="email">Email: </label>
+                        <input type="text" name="email" value=""/> <br/>
+
+                        <b>Membership Satus: </b>
+                        <label for="status">Member</label>
+                        <input type="checkbox" name="status"/>
+                        <label for="status">Non-member</label>
+                        <input type="checkbox" name="status"/> <br/>
+
+                        <label for="comments">Comments: </label>
+                        <textarea name="comments" cols="45" rows="5"></textarea> <br/>
+
+                        <label for="attach">Attach a file: </label>
+                        <input type="file" name="attach" /> <br/>
+
+                        <input type="submit" value="Submit" /> 
+
+                    </fieldset>
+                </form>
+            </div>
+        </main>
 
         <aside> </aside>
 
