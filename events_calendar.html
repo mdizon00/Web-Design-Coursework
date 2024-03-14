@@ -1,69 +1,193 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Steezy Society</title>
+        <title>Half Cab Society</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/main.css">
     </head>
 
     <body>
-        <header>    </header>
-
-        <nav> 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="img_gallery.html">Gallery</a></li>
-                <li><a href="current_members.html">Current Members</a></li>
-                <li><a href="events_calendar.html">Events</a></li>
-                <li><a href="contact_us.html">Contact Us</a></li>
+        <header> 
+            <div id="topPage"> 
+              <img id="logo" src="images/skate-logo.png" alt="logo">
+              <h1 id="title">
+                  Half Cab Society
+              </h1> 
+            </div> 
+          </header>
+      
+        <nav class="navbar sticky-top bg-body-tertiary ">
+        <div class="container-fluid justify-content-center">
+            <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="img_gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="current_members.html">Current Members</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="events_calendar.html">Events</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="...">Playlists</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="...">Support Local</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact_us.html">Contact Us</a>
+            </li>
             </ul>
+        </div>
         </nav>
 
         <main>
-            <div>
-                <table>
-                    <tr>
-                        <td></td><th>Mon</th><th>Tues</th><th>Wed</th><th>Thurs</th><th>Fri</th><th>Sat</th><th>Sun</th>
-                    </tr>
-                    <tr>
-                        <th>W1</th><td></td><td></td><td></td><th>Welcome! <br/> Meetup at the union </th><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <th>W2</th><td></td><td></td><th>Meetup @Westburn Park</th><td></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <th>W3</th><td></td><td></td><th>Meetup @Bridge of Don Park</th><td></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <th>W4</th><td></td><td></td><th>Meetup @Westburn Park</th><td></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <th>W5</th><td></td><td></td><th>Meetup @Bridge of Don Park</th><td></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <th>W6</th><td></td><td></td><th>Meetup @Kincorth Park</th><td></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <th>W7</th><th>Skate Jam @Transition Extreme</th><td></td><td></td><td></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <th>W8</th><td></td><td></td><th>Meetup @Westburn Park</th><td></td><td></td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <th>W9</th><td></td><td></td><td></td><td></td><td>Drinks @bar</td><td></td><td></td>
-                    </tr>
-                    <tr>
-                        <th>W10</th><th>Society on break</th>
-                    </tr>
-                    <tr>
-                        <th>W11</th><th>Society on break</th>
-                    </tr>
-                    <tr>
-                        <th>W12</th><td></td><td></td><td></td><td></td><td>Skate Jam Competition @Transition Extreme</td><td></td><td></td>
-                    </tr>
-                </table>
+            <!--bg image -->
+            <div class="bg-image" style="background-image: url('images/plainBG.jpeg')">
+
+                <div id="calendar">
+                    <table class="table table-striped table-hover make-equal">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Monday</th>
+                            <th scope="col">Tuesday</th>
+                            <th scope="col">Wednesday</th>
+                            <th scope="col">Thursday</th>
+                            <th scope="col">Friday</th>
+                            <th scope="col">Saturday</th>
+                            <th scope="col">Sunday</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">W1</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Welcome! Meet and greet at the union</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">W2</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>meetup @westburn</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">W3</th>
+                            <td></td>
+                            <td></td>
+                            <td>meetup @westburn</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">W4</th>
+                            <td></td>
+                            <td></td>
+                            <td>meetup @westburn</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">W5</th>
+                            <td></td>
+                            <td></td>
+                            <td>meetup @westburn</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">W6</th>
+                            <td></td>
+                            <td></td>
+                            <td>meetup @westburn</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">W7</th>
+                            <td>Skate Jam @Transition Extreme</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">W8</th>
+                            <td></td>
+                            <td></td>
+                            <td>meetup @westburn</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">W9</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Drinks @Bar</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">W10</th>
+                            <td colspan="7">Society on a break</td>
+                            
+                        </tr>
+                        <tr>
+                            <th scope="row">W11</th>
+                            <td colspan="7">Society on a break</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">W12</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Skate Jam @Transition Extreme</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </main>
 
         <aside> </aside>
 
-        <footer></footer>
+        <footer>
+            Copyright Mckzyn Dizon
+        </footer>
     </body>
 </html>

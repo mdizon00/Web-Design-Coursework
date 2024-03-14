@@ -1,0 +1,111 @@
+head {
+    background-color: #aaa;
+}
+
+body {
+    background-color: #686868;
+}
+
+nav {
+    background-color: #f0d8a2 ;
+}
+
+
+nav li {
+    border:2px;
+    border:solid;
+    border-color:#023020;
+    background-color: green;
+    list-style-type: none;
+}
+
+nav li a {
+    color:white;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: black;
+}
+
+.active {
+    background-color: #023020;
+}
+
+header {
+    margin:10px;
+    border:10px;
+    padding:10px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+}
+
+h1 {
+    font-size: 36pt;
+}
+
+h3 {
+    font-size: larger;
+}
+
+p {
+    font-size: 10pt;
+}
+
+main {
+    background-color: white;
+    float:left;
+    margin-right: 50%;
+}
+
+aside {
+    background-color: rgb(219, 61, 61);
+    float:right;
+    clear:both;
+}
+
+
+/*
+table {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-collapse:separate;
+}
+
+table td, table th {
+    border: 2px;
+    border: solid;
+    border: #F0F0F0;
+}
+
+table tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+table tr:hover {
+    background-color: #808080;
+}
+
+table th{
+    background-color: green;
+    color: white;
+}
+*/
+
+.calendar {
+    border:10%;
+}
+
+table {
+    border:10%;
+}
+
+
+footer {
+    background-color: green;
+    border-radius: 10px;
+}
+
