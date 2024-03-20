@@ -16,20 +16,22 @@
 
   <body> 
     <header>
-      <div id="topPage" class="clearfix"> 
+      <div id="topPage">
         <img id="logo" src="images/skate-logo.png" alt="logo">
-        <h1 id="title">
-            Half Cab Society
-        </h1>
-
-
-        <form id="login">
-          <input id="username" type="text" class="form-control" placeholder="Username" >
-          <input id="password" type="text" class="form-control" placeholder="Password" >
-          <!-- <button type="button" onclick='login()'>Login</button> -->
-        </form>
-
-      </div>
+        <a id="title" class="nav-link" href="index.html">Half Cab Society</a>
+    
+        <div id="top-right">
+          <div id="login">
+          <button type="button" class="btn btn-primary" onclick='login()'>Login</button>
+          </div>
+          <div id="pass">
+            <input id="password" type="password" class="form-control" placeholder="Password" >
+          </div>
+          <div id="name">
+            <input id="username" type="text" class="form-control" placeholder="Username" >
+          </div>
+        </div>
+      </div>  
 
     </header>
 
@@ -66,7 +68,7 @@
     <main> 
       
       <div class="carousel">
-        <div id="carouselExampleCaptions" class="carousel slide">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -76,7 +78,7 @@
           <div class="carousel-inner">
 
             <div class="carousel-item active">
-              <img src="images/bod_skatepark.jpeg" class="d-block w-100" alt="...">
+              <img src="images/carousel/bod_skatepark.jpeg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Local Skatepark</h5>
                 <h3>Bridge of Don</h3>
@@ -86,20 +88,22 @@
             </div>
 
             <div class="carousel-item">
-              <img src="images copy/kincorth_skatepark.jpeg" class="d-block w-100" alt="...">
+              <img src="images/carousel/seed_banner.jpeg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Local Skatepark</h5>
-                <h3>Kincorth</h3>
-                <p>See our next skate sesh on the Events page!</p>
-                <button type="button" class="btn btn-primary btn-lg">Let's Skate!</button>
+                <h5>Support Local</h5>
+                <h3>SEED</h3>
+                <p>Visit Aberdeen's local skatshop for your gear!</p>
+                <a href="https://seedskateshop.com/" class="btn btn-primary btn-lg">Shop Gear</a>
               </div>
             </div>
 
             <div class="carousel-item">
-              <img src="images copy/westburn_skatepark.jpeg" class="d-block w-100" alt="...">
+              <img src="images/carousel/transition_banner.jpeg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Transition Extreme</h5>
-                <p>Indoor and outdoor adventure sports complex with climbing wall, BMX, zip wires and onsite cafe.</p>
+                <h5>Indoor Skatepark</h5>
+                <h3>Transition Extreme</h3>
+                <p>See our next skate sesh on the Events page!</p>
+                <a href="events_calendar.html" class="btn btn-primary btn-lg">Let's Skate!</a>
               </div>
             </div>
           </div>
