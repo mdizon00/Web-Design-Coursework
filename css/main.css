@@ -60,6 +60,8 @@ header {
 body {
     background-color: #ffffff;
     overflow-x: hidden;
+    width:100%;
+
     /* stops page from scrolling right*/
 }
 
@@ -352,6 +354,17 @@ aside {
     display: flex;
     justify-content: space-evenly;
 }
+
+
+/* GAMES
+-----------------------------------*/
+.game1 {
+    background: #ee4970;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 
 
 /* FOOTER
