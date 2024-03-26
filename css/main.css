@@ -1,3 +1,9 @@
+html {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
 /* HEADER
 -----------------------------------*/
 header {
@@ -58,7 +64,7 @@ header {
 /* NAV BAR
 -------------------------------*/
 body {
-    background-color: #ffffff;
+
     overflow-x: hidden;
     width:100%;
 
@@ -121,9 +127,20 @@ body::-webkit-scrollbar {
     padding-right: 15%;
 }
 
-.bg-image {
-    background-size: 100%;
+.bg {  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    padding-bottom:3%;
+}
+
+body {
+    background-size: cover;
 }
 
 /* TEXT
@@ -230,18 +247,7 @@ h3 {
 
 /* LAYOUT
 -----------------------------*/
-main {
-    background-color: white;
-    border-radius: 10px;
-}
 
-aside {
-    background-color: white;
-    margin-right: 5%;
-    padding: 0px;
-    border: 0px;
-    border-radius: 10px;
-}
 
 
 
@@ -344,25 +350,49 @@ aside {
     padding-bottom: 1%;
 }
 
+.videos {
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.videos p {
+    text-align: center;
+}
 
 .main-container {
-    display: flex;
-    justify-content: space-evenly;
+    margin-left:15%;
+    margin-right:15%;
+    margin-bottom:0;
 }
 
-.video-caption {
+
+/* .video-caption {
     display: flex;
     justify-content: space-evenly;
-}
+} */
 
 
 /* GAMES
 -----------------------------------*/
-.game1 {
-    background: #ee4970;
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+.game-bg {
+    width:100%;
+    min-height:100vh;
+    display:flex;
+}
+
+.card {
+    width:300px;
+    height:300px;
+    display: flex;
+    padding-right:50px;
+    justify-content: center;
+}
+
+.card h3, .card p {
+
+    text-align: center;
+
 }
 
 

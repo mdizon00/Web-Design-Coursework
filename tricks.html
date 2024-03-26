@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
     <title>Half Cab Society</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -15,8 +16,7 @@
 
     <link rel="stylesheet" href="css/main.css">
 
-
-
+    <script src="scripts/login.js"></script>
 </head>
 
 <body>
@@ -64,7 +64,7 @@
                     <a class="nav-link active" aria-current="page" href="tricks.html">Tricks List</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="...">Support Local</a>
+                    <a class="nav-link" href="games.html">Games</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact_us.html">Contact Us</a>
@@ -76,67 +76,75 @@
 
     <main>
 
-        <div class="bg-image" style="background-image: url('images/plainBG.jpeg');height:100vh">
+        <div class="bg" style="background-image: url('images/plainBG.jpeg')">
 
             <div class="galleryTitle">
                 <h1>Tricks List</h1>
                 <p>Here are clips of some of the fundamental skateboard tricks! Stance: regular</p>
             </div>
 
-            <div class="trickTitle">
+            <div class="trickTitle"> 
                 <h2>Basic Tricks</h2>
             </div>
 
             <div class="main-container">
-                <div class="video-container">
-                    <video width="320" height="240" src="videos/ollie.mp4"></video>
-                    <video width="320" height="240" src="videos/pop-shuvit.mp4"></video>
-                    <video width="320" height="240" src="videos/fs-shuvit.mp4"></video>
+                <div class="videos">
+                    <div class="trick">
+                        <video height="240" src="videos/ollie.mp4"></video>
+                        <p>Ollie</p>
+                    </div>
+                    <div class="trick">
+                        <video height="240" src="videos/pop-shuvit.mp4"></video>
+                        <p>Pop-Shuvit</p>
+                    </div>
+                    <div class="trick">
+                        <video height="240" src="videos/fs-shuvit.mp4"></video>
+                        <p>FS Pop-Shuvit</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="video-caption">
-                <p>Ollie</p>
-                <p>Pop-Shuvit</p>
-                <p>FS Pop-Shuvit</p>
-            </div>
-
-            <div class="trickTitle">
+            <div class="trickTitle"> 
                 <h2>Intermediate Tricks</h2>
             </div>
 
             <div class="main-container">
-                <div class="video-container">
-                    <video width="320" height="240" src="videos/kickflip.mp4"></video>
-                    <video width="320" height="240" src="videos/heelflip.mp4"></video>
-                    <video width="320" height="240" src="videos/tre-flip.mp4"></video>
+                <div class="videos">
+                    <div>
+                        <video height="240" src="videos/kickflip.mp4"></video>
+                        <p>Kickflip</p>
+                    </div>
+                    <div>
+                        <video height="240" src="videos/heelflip.mp4"></video>
+                        <p>Heelflip</p>
+                    </div>
+                    <div>
+                        <video height="240" src="videos/tre-flip.mp4"></video>
+                        <p>Tre Flip</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="video-caption">
-                <p>Kickflip</p>
-                <p>Heelflip</p>
-                <p>Tre Flip</p>
-            </div>
-
-            <div class="trickTitle">
+            <div class="trickTitle"> 
                 <h2>Advanced Tricks</h2>
             </div>
 
             <div class="main-container">
-                <div class="video-container">
-                    <video width="320" height="240" src="videos/impossible.mp4"></video>
-                    <video width="320" height="240" src="videos/laser-flip.mp4"></video>
-                    <video width="320" height="240" src="videos/hardflip.mp4"></video>
+                <div class="videos">
+                    <div>
+                        <video height="240" src="videos/hardflip.mp4"></video>
+                        <p>Hardflip</p>
+                    </div>
+                    <div>
+                        <video height="240" src="videos/laser-flip.mp4"></video>
+                        <p>Laser Flip</p>
+                    </div>
+                    <div>
+                        <video height="240" src="videos/impossible.mp4"></video>
+                        <p>Impossible</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="video-caption">
-                <p>Impossible</p>
-                <p>Laser Flip</p>
-                <p>Hard Flip</p>
-            </div>
-
 
         </div>
     </main>
