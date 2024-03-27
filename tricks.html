@@ -4,47 +4,50 @@
 <head>
     <meta charset="utf-8">
     <title>Half Cab Society</title>
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
+    <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
 
-    <script src="scripts/login.js"></script>
 </head>
 
 <body>
-
+    <!-- HEADER START-->
     <header>
         <div id="topPage">
             <div id="halfCab">
                 <img id="logo" src="images/skate-logo.png" alt="logo">
                 <a id="title" class="nav-link" href="index.html">Half Cab Society</a>
             </div>
+
+            <!-- LOGIN START -->
             <div id="top-right">
                 <div id="name">
                     <input id="username" type="text" class="form-control" placeholder="Username">
                 </div>
-
                 <div id="pass">
                     <input id="password" type="password" class="form-control" placeholder="Password">
                 </div>
-
                 <div id="login">
                     <button type="button" class="btn btn-primary" onclick='login()'>Login</button>
                 </div>
             </div>
+            <!-- LOGIN END -->
         </div>
-
     </header>
+    <!-- HEADER END-->
 
-
+    <!-- NAVIGATION START -->
     <nav class="navbar sticky-top bg-body-tertiary ">
         <div class="container-fluid justify-content-center">
             <ul class="nav justify-content-center">
@@ -64,7 +67,7 @@
                     <a class="nav-link active" aria-current="page" href="tricks.html">Tricks List</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="games.html">Games</a>
+                    <a class="nav-link" href="board_setup.html">Skateboard Builds</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact_us.html">Contact Us</a>
@@ -72,21 +75,26 @@
             </ul>
         </div>
     </nav>
+    <!-- NAVIGATION END-->
 
-
+    <!-- MAIN START -->
     <main>
 
-        <div class="bg" style="background-image: url('images/plainBG.jpeg')">
+        <!-- BACKGROUND IMAGE START -->
+        <div class="bg-image" style="background-image: url('images/plainBG.jpeg')">
 
-            <div class="galleryTitle">
+            <!-- PAGE HEADING -->
+            <div class="trickHead">
                 <h1>Tricks List</h1>
-                <p>Here are clips of some of the fundamental skateboard tricks! Stance: regular</p>
+                <p>Here are clips of some of the fundamental skateboard tricks! Hover over the board to see how the
+                    trick is done! Stance: regular</p>
             </div>
 
-            <div class="trickTitle"> 
+            <!-- ROW 1 HEADING -->
+            <div class="trickTitle">
                 <h2>Basic Tricks</h2>
             </div>
-
+            <!-- VIDEOS -->
             <div class="main-container">
                 <div class="videos">
                     <div class="trick">
@@ -104,10 +112,11 @@
                 </div>
             </div>
 
-            <div class="trickTitle"> 
+            <!-- ROW 2 HEADING -->
+            <div class="trickTitle">
                 <h2>Intermediate Tricks</h2>
             </div>
-
+            <!-- VIDEOS -->
             <div class="main-container">
                 <div class="videos">
                     <div>
@@ -125,10 +134,11 @@
                 </div>
             </div>
 
-            <div class="trickTitle"> 
+            <!-- ROW 3 HEADING -->
+            <div class="trickTitle">
                 <h2>Advanced Tricks</h2>
             </div>
-
+            <!-- VIDEOS -->
             <div class="main-container">
                 <div class="videos">
                     <div>
@@ -145,19 +155,20 @@
                     </div>
                 </div>
             </div>
-
         </div>
+        <!-- BACKGROUND IMAGE END -->
     </main>
+    <!-- MAIN END -->
 
-    <script src="scripts/login.js"></script>
+    <!-- SCRIPTS-->
+    <script src="scripts/main.js"></script>
 
-    <aside>
-
-    </aside>
-
+    <!-- FOOTER START -->
     <footer>
         Copyright Mckzyn Dizon
     </footer>
+    <!-- FOOTER END-->
+
 </body>
 
 </html>
