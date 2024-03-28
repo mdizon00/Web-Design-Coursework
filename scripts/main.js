@@ -15,6 +15,14 @@ function login() {
     document.getElementById('password').value = "";
 }
 
+/* HOVER EFFECT */
+function highlight(x) {
+    x.style = "border: solid #ee4970 2px;"
+}
+function delight(x) {
+    x.style = "border: none;"
+}
+
 /* HOVER TO PLAY VIDEO, only works for one video
 const video = document.querySelector(".video-container video");
 

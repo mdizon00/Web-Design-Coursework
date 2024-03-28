@@ -173,10 +173,9 @@ body {
 }
 
 #calendar {
-    padding-top: 1%;
     padding-left: 15%;
     padding-right: 15%;
-    padding-bottom: 10%;
+    padding-bottom: 2%;
 }
 
 .make-equal {
@@ -184,11 +183,31 @@ body {
     /* makes every column equal */
 }
 
-#eventsTitle {
+.eventsTitle {
     padding-top: 2%;
     padding-left: 15%;
     position: static;
     color: #2aa0a5;
+    padding-bottom:1%;
+}
+
+.eventsTitle p, .eventsTitle h5{
+    color: black;
+}
+
+#membersButtonEvents {
+    padding-left: 15%;
+}
+
+#eventsPosters {
+    padding-left: 11%;
+    padding-right: 9%;
+    padding-bottom: 5%;
+}
+
+.eventImg {
+    width:90%;
+    border: 2px solid black;
 }
 
 /* FORM
@@ -196,8 +215,11 @@ body {
 #contactTitle {
     padding-top: 2%;
     padding-left: 5%;
-
     color: #2aa0a5;
+}
+
+#contactTitle p {
+    color: black;
 }
 
 #form-block {
@@ -212,7 +234,6 @@ body {
 .galleryTitle {
     padding-top: 2%;
     padding-left: 8%;
-
     color: #2aa0a5;
 }
 
@@ -244,32 +265,47 @@ body {
 ------------------------------*/
 #membersTitle {
     padding-top: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 3%;
     padding-left: 18%;
     color: #2aa0a5;
 }
 
-/* #membersTitle h1 {
-    font-size: 60px;
-} */
-
 .carousel-members {
     padding-top: 2%;
-    padding-left: 25%;
-    padding-right: 25%;
-}
-
-#memberList {
-    text-align: center;
     padding-left: 18%;
     padding-right: 18%;
 }
 
+#memberList {
+    text-align: center;
+    padding-left: 16%;
+    padding-right: 16%;
+    padding-bottom: 3%;
+}
+
 #membersButton {
-    padding-left: 15%;
+    padding-left: 18%;
     position: static;
-    padding-top: 3%;
-    padding-bottom: 4%;
+    padding-bottom: 2%;
+    padding-top:3%;
+}
+
+.grid-container-members {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 10px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.grid-container-members>div {
+    padding: 20px 20px;
+}
+
+.peopleList {
+    padding: 4% 17%;
 }
 
 
@@ -332,14 +368,6 @@ body {
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 0;
-}
-
-/* GAMES
------------------------------------*/
-.game-card {
-    display: flex;
-    justify-content: center;
-    padding-top: 2%;
 }
 
 /* BOARDS
