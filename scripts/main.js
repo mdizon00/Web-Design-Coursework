@@ -36,6 +36,23 @@ video.addEventListener("mouseleave", () => {
 });
 */
 
+/* EVENTS PAGE */
+function submit_event() {
+    var title = document.forms["events"]["event_title"].value;
+    var date = document.forms["events"]["event_date"].value;
+    if (title == "") {
+        alert("An event must have a title!");
+    }
+    else {
+        if (date.length == 0) {
+            alert("An event must have a date!");
+        }
+        else {
+            alert("Event submitted! The society will contact you soon!");
+        }
+    }
+}
+
 /* TRICKS LIST PAGE */
 /* HOVER TO PLAY VIDEO, multiple videos on page */
 document.addEventListener('mouseover', hoverVideo, false);

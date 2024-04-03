@@ -29,7 +29,7 @@
         <div id="topPage">
             <!-- TITLE AND LOGO -->
             <div id="halfCab">
-                <img id="logo" src="images/skate-logo.png" alt="logo">
+                <a href="index.html"><img id="logo" src="images/skate-logo.png" alt="logo"></a>
                 <a id="title" class="nav-link" href="index.html">Half Cab Society</a>
             </div>
 
@@ -94,9 +94,7 @@
 
             <!-- FORM START -->
             <div id="form-block">
-                <form class="form-control row g-3 align-items-center">
-
-                    
+                <form class="form-control row g-3 align-items-center flex-nowrap">
                     <!--name start-->
                     <div class="col-auto">
                         <label class="form-label">Name</label>
@@ -126,6 +124,12 @@
                         </div>
                     </div>
                     <!--radio end-->
+                    <!--comment box start-->
+                    <div class="input-group">
+                        <span class="input-group-text">Comments</span>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                    <!--comment box end-->
                     <!--choose file start-->
                     <div class="input-group col-auto">
                         <input type="file" class="form-control" id="inputGroupFile04" aria-label="Upload">
@@ -137,12 +141,11 @@
                             onclick='send_form("form_outcome","Form has been sent successfully!")'>Submit
                         </button>
 
-                        <!-- form message start-->
+                        <!-- form message start--> 
                         <div id="form_outcome">
                             <p></p>
                         </div>
                         <!-- form message end-->
-
                     </div>
                     <!--submit button end-->
                 </form>
