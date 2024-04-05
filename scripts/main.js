@@ -2,15 +2,31 @@
 
 /* HEADER IN ALL PAGES */
 /* LOGIN MESSAGE */
+
 var counter = 2;
 function login() {
+
+    var name = document.getElementById('username').value;
+    var pass = document.getElementById('password').value;
     if (counter % 2 == 0) {
-        alert('You have been logged in!');
+        if (name == "") {
+            alert("You must enter a username!");
+        }
+        else if (pass == "") {
+            alert("You must enter a password!");
+        }
+        else {
+            alert('You have been logged in!');
+            counter += 1;
+        }
     }
     else {
         alert('You have been logged out!');
+        counter += 1;
     }
-    counter += 1;
+
+
+
     document.getElementById('username').value = "";
     document.getElementById('password').value = "";
 }
@@ -39,9 +55,13 @@ video.addEventListener("mouseleave", () => {
 /* EVENTS PAGE */
 function submit_event() {
     var title = document.forms["events"]["event_title"].value;
+    var details = document.forms["events"]["event_details"].value;
     var date = document.forms["events"]["event_date"].value;
     if (title == "") {
         alert("An event must have a title!");
+    }
+    else if (details == "") {
+        alert("The event must have a description");
     }
     else {
         if (date.length == 0) {
@@ -49,6 +69,9 @@ function submit_event() {
         }
         else {
             alert("Event submitted! The society will contact you soon!");
+            document.forms["events"]["event_title"].value = "";
+            document.forms["events"]["event_details"].value = "";
+            document.forms["events"]["event_date"].value = 0;
         }
     }
 }
