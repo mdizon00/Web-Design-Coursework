@@ -8,21 +8,23 @@ function login() {
 
     var name = document.getElementById('username').value;
     var pass = document.getElementById('password').value;
+    var logButton = document.getElementById('logButton');
+
+
     if (counter % 2 == 0) {
-        if (name == "") {
-            alert("You must enter a username!");
-        }
-        else if (pass == "") {
-            alert("You must enter a password!");
+        if (name == "" || pass == "") {
+            alert("You must enter a username and password!");
         }
         else {
             alert('You have been logged in!');
             counter += 1;
+            logButton.value = "Logout"
         }
     }
     else {
         alert('You have been logged out!');
         counter += 1;
+        logButton.value = "Login"
     }
 
 

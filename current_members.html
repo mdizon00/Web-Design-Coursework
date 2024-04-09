@@ -7,7 +7,7 @@ Threat Source: External
 Threat Agent: Human: Member from rival society (Scooter Rider Society)
 Threat Motivation: Malicious: Embarrassment of the society
 Threat Intention: Intentional
-Threat Impact: Defacement of society website, changing of members images, possible identify theft of members, loss of society members trust. 
+Threat Impact: Defacement of society website, changing of members images, possible identify theft of members, loss of society members trust.
 Threat Mitigation: Login validation, 2FA in place before member images can be changed, email updates to members whose images have been changed.
 -->
 
@@ -52,7 +52,7 @@ Threat Mitigation: Login validation, 2FA in place before member images can be ch
           <input id="password" type="password" class="form-control" placeholder="Password">
         </div>
         <div id="login">
-          <button type="button" class="btn btn-primary" onclick='login()'>Login</button>
+          <input type="button" class="btn btn-primary" id="logButton" value="Login" onclick='login()'>
         </div>
       </div>
       <!-- LOGIN END -->
@@ -106,34 +106,34 @@ Threat Mitigation: Login validation, 2FA in place before member images can be ch
       <div id="memberList">
         <div class="container-fluid justify-content-center">
           <div class="row">
-            <div class="col-sm">
+            <div class="col-sm memberPic">
               <h5>Captian</h5>
-              <img src="images/members/tony.jpeg" class="rounded-circlemassie-hovering" width="120" height="120"
-                style="overflow:hidden" alt="tony">
+              <img src="images/members/tony.jpeg" class="rounded-circlemassie-hovering" style="overflow:hidden"
+                alt="tony">
               <h5>Tony Hawk</h5>
             </div>
-            <div class="col-sm">
+            <div class="col-sm memberPic">
               <h5>Vice Captain</h5>
-              <img src="images/members/andy.jpeg" class="rounded-circlemassie-hovering" width="120" height="120"
-                style="overflow:hidden" alt="andy">
+              <img src="images/members/andy.jpeg" class="rounded-circlemassie-hovering" style="overflow:hidden"
+                alt="andy">
               <h5>Andy Schrock</h5>
             </div>
-            <div class="col-sm">
+            <div class="col-sm memberPic">
               <h5>Secretary</h5>
-              <img src="images/members/chris.jpeg" class="rounded-circlemassie-hovering" width="120" height="120"
-                style="overflow:hidden" alt="chris">
+              <img src="images/members/chris.jpeg" class="rounded-circlemassie-hovering" style="overflow:hidden"
+                alt="chris">
               <h5>Chris Chann</h5>
             </div>
-            <div class="col-sm">
+            <div class="col-sm memberPic">
               <h5>Inclusivity Rep</h5>
-              <img src="images/members/mike.jpeg" class="rounded-circlemassie-hovering" width="120" height="120"
-                style="overflow:hidden" alt="mike">
+              <img src="images/members/mike.jpeg" class="rounded-circlemassie-hovering" style="overflow:hidden"
+                alt="mike">
               <h5>Mike Carroll</h5>
             </div>
-            <div class="col-sm">
+            <div class="col-sm memberPic">
               <h5>Treasurer</h5>
-              <img src="images/members/rodney.jpeg" class="rounded-circlemassie-hovering" width="120" height="120"
-                style="overflow:hidden" alt="rodney">
+              <img src="images/members/rodney.jpeg" class="rounded-circlemassie-hovering" style="overflow:hidden"
+                alt="rodney">
               <h5>Rodney Mullen</h5>
             </div>
           </div>
@@ -196,52 +196,12 @@ Threat Mitigation: Login validation, 2FA in place before member images can be ch
       </div>
       <!-- CAROUSEL END -->
 
-      <!-- <div class="partners container justify-content-center">
-        <h4>In partnership with:</h4>
-        <div class="row">
-          <div class="col">
-            <img src="images/logos/seed_logo.webp" width="150">
-          </div>
-          <div class="col">
-            <img src="images/logos/doric_logo.png" width="150">
-          </div>
-          <div class="col">
-            <img src="images/logos/tx_logo.png" width="150">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <img src="images/logos/girl_logo.webp" width="150">
-          </div>
-          <div class="col">
-            <img src="images/logos/revive_logo.png" width="150">
-          </div>
-          <div class="col">
-            <img src="images/logos/bird_logo.jpg" width="150">
-          </div>
-        </div>
-      </div> -->
-
-      <div class="partners justify-content-center">
+      <div class="partners">
         <h5>In partnership with:</h5>
 
-            <img src="images/logos/seed_logo.webp" width="150">
-          
-       
-            <img src="images/logos/doric_logo.png" width="150">
-          
-
-            <img src="images/logos/tx_logo.png" width="150">
-
-
-            <img src="images/logos/girl_logo.webp" width="150">
-    
-      
-            <img src="images/logos/revive_logo.png" width="150">
-
-
-            <img src="images/logos/bird_logo.jpeg" width="150">
-     
+        <img src="images/logos/seed_logo.png" alt="seed skateshop logo">
+        <img src="images/logos/doric_logo.png" alt="doric sktaeboards logo">
+        <img src="images/logos/tx_logo.png" alt="transition extreme logo">
 
       </div>
 
@@ -250,6 +210,8 @@ Threat Mitigation: Login validation, 2FA in place before member images can be ch
         <p>Want to get in touch? Just click the button below and fill out the form!</p>
         <a href="contact_us.html" class="btn btn-primary btn-lg">Contact Us</a>
       </div>
+
+    </div>
     <!-- BACKGROUND IMAGE END-->
 
   </main>

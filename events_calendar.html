@@ -29,7 +29,7 @@
                 <a href="index.html"><img id="logo" src="images/skate-logo.png" alt="logo"></a>
                 <a id="title" class="nav-link" href="index.html">Half Cab Society</a>
             </div>
- 
+
             <!-- LOGIN START -->
             <div id="top-right">
                 <div id="name">
@@ -39,7 +39,7 @@
                     <input id="password" type="password" class="form-control" placeholder="Password">
                 </div>
                 <div id="login">
-                    <button type="button" class="btn btn-primary" onclick='login()'>Login</button>
+                    <input type="button" class="btn btn-primary" id="logButton" value="Login" onclick='login()'>
                 </div>
             </div>
             <!-- LOGIN END -->
@@ -229,7 +229,8 @@
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Description</label>
-                        <textarea class="form-control" name="event_details" aria-label="With textarea" placeholder="What will we do? Where will it take place?"></textarea>
+                        <textarea class="form-control" name="event_details" aria-label="With textarea"
+                            placeholder="What will we do? Where will it take place?"></textarea>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Date</label>
@@ -239,36 +240,33 @@
                 </form>
             </div>
             <!-- EVENT FORM END -->
-            
+
             <!-- POSTERS TILE -->
             <div class="eventsTitle">
                 <h5>Check out other events outside of the society taking place around Aberdeen!</h5>
             </div>
-            
+
             <!-- POSTERS START-->
             <div id="eventsPosters" class="container justify-content-center">
                 <!-- ROW 1 -->
                 <div class="row">
-                  <div class="col-sm">
-                    <img class="eventImg" src="images/events/bod_jam.jpeg"
-                      alt="doric event" class="gallery-img">
-                  </div>
-                  <div class="col-sm">
-                    <img class="eventImg" src="images/events/westburn_jam.jpeg" 
-                      alt="bod jam" class="gallery-img">
-                  </div>
-                  <div class="col-sm">
-                    <img class="eventImg" src="images/events/doric.jpeg"
-                      alt="westburn skate jam" class="gallery-img">
-                  </div>
+                    <div class="col-sm">
+                        <img class="eventImg gallery-img" src="images/events/bod_jam.jpeg" alt="doric event">
+                    </div>
+                    <div class="col-sm">
+                        <img class="eventImg gallery-img" src="images/events/westburn_jam.jpeg" alt="bod jam">
+                    </div>
+                    <div class="col-sm">
+                        <img class="eventImg gallery-img" src="images/events/doric.jpeg" alt="westburn skate jam">
+                    </div>
                 </div>
             </div>
             <!-- POSTERS END -->
 
             <!-- CONTACT US LINK -->
             <div id="membersButtonEvents">
-            <p>Want to get in touch? Just click the button below and fill out the form!</p>
-            <a href="contact_us.html" class="btn btn-primary btn-lg">Contact Us</a>
+                <p>Want to get in touch? Just click the button below and fill out the form!</p>
+                <a href="contact_us.html" class="btn btn-primary btn-lg">Contact Us</a>
             </div>
 
         </div>
@@ -277,7 +275,7 @@
     <!-- MAIN END-->
 
     <!-- SCRIPTS -->
-    <script src="scripts/main.js"></script> 
+    <script src="scripts/main.js"></script>
 
     <!-- FOOTER START -->
     <footer>
